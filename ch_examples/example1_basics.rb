@@ -15,7 +15,7 @@ include Gosu
 #
 # Image.autoload_dirs << File.join(self.root, "data", "my_image_dir")  
 # 
-class Ex1 < Chingu::GameState
+class Game < Chingu::GameState
   def initialize #(options = {})
     super
 #    super #(640,480,false)              # leave it blank and it will be 800,600,non fullscreen
@@ -41,4 +41,33 @@ class Player < Chingu::GameObject
 end
 
 
-# Game.new.show
+# Game.new.show   --  hashed out for ch_loader
+
+
+
+#
+#  Ex1 class added for ch_loader
+#
+class Ex1 < Chingu::GameState
+  def initialize
+    #
+    # See http://www.libgosu.org/rdoc/classes/Gosu/Window.html#M000034 for options
+    # By default Chingu does 640 x 480 non-fullscreen.
+    #
+    super
+    @title = Chingu::Text.create(:text=>"Example 1 - Basics" , :x=>290, :y=>150, :size=>28)
+
+    @title2 = Chingu::Text.create(:text=>"- Press ENETER to start -" , :x=>320, :y=>210, :size=>24)
+
+    @title3 = Chingu::Text.create(:text=>"Press Q for Menu" , :x=>310, :y=>500, :size=>20)
+
+    $window.caption = "Chingu Example 1  -  Controls: ARROWS"
+
+    self.input = { :enter  => :go, 
+                   :return => :go   }
+  end
+
+  def go
+    push_game_state(Game)
+  end
+end

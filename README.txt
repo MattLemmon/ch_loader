@@ -33,9 +33,10 @@ PROJECT GOALS:
 1.  Move all the example files into the /ch_examples folder.
     I think the $LOAD_PATH needs to be specified in order to
     accomplish this....
+                        COMPLETED!  I figured it out!! Yes!!
 
 2.  Add more examples.
-
+                        PENDING...
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

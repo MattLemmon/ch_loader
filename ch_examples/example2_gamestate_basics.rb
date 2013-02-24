@@ -10,7 +10,7 @@ include Gosu
 #
 # Also tests out the Debug game state.
 #
-class Ex2 < Chingu::GameState
+class Ex2 < Chingu::GameState   # class Game < Chingu::Window
   def initialize
     #
     # See http://www.libgosu.org/rdoc/classes/Gosu/Window.html#M000034 for options
@@ -20,9 +20,6 @@ class Ex2 < Chingu::GameState
     @title = Chingu::Text.create(:text=>"Example 2 - Gamestate Basics" , :x=>250, :y=>150, :size=>28)
 
     @title2 = Chingu::Text.create(:text=>"- Press ENETER to start -" , :x=>280, :y=>210, :size=>24)
-
-    @title3 = Chingu::Text.create(:text=>"Press Q for Menu" , :x=>270, :y=>300, :size=>20)
-
 
     $window.caption = "Chingu Example 2  -  Controls: ARROWS + SPACEBAR + RETURN"
 
@@ -116,4 +113,4 @@ class Play < Chingu::GameState
   end  
 end
 
-#Game.new.show
+#Game.new.show  --  hashed out for ch_loader
