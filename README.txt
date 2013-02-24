@@ -2,7 +2,7 @@
 
         -----------------------------------
        |                                   |
-       |        Chingu Example Loader      |
+       |       Chingu Example Loader       |
        |                                   |
         -----------------------------------
 
@@ -12,10 +12,9 @@
 
 
 
+$ ch_loader.rb
 
-                 ch_loader.rb
-
-Loads the Chingu Examples from a Welcome Screen.
+  loads the Chingu Examples from a Welcome Screen.
 
 
 
