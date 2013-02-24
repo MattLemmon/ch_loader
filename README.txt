@@ -10,6 +10,8 @@
   
       --     Tested on RUBY VERSION 1.9.1 only     --
 
+      --         Forking is encouraged!!           --
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -44,7 +46,7 @@ PROJECT GOALS:
 
 
 1.  Move all the example files into the /ch_examples folder.
-    I think the $LOAD_PATH needs to be specified in order to
+    I think $LOAD_PATH needs to be specified in order to
     accomplish this....
                         COMPLETED!  I figured it out!! Yes!!
 
