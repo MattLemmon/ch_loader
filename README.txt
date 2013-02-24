@@ -6,9 +6,9 @@
            |                                   |
             -----------------------------------
 
-      --   (       Requires Chingu Gem         )   --
+      --     Requires Chingu Gem and Gosu Gem      --
   
-      --   ( Tested on RUBY VERSION 1.9.1 only )   --
+      --     Tested on RUBY VERSION 1.9.1 only     --
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
