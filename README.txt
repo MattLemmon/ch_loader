@@ -72,8 +72,10 @@ PROJECT GOALS:
 BUGS TO FIX:
 
 
-1.  Problem with $window.caption-loading. 
-    (Doesn't load the captions in the example gamestates).
+1.  Problem with title loading (@descr).
+
+2.  Problem with $window.caption-loading. 
+    (Shows wrong caption in example gamestates).
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
