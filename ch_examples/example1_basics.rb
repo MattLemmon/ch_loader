@@ -15,11 +15,9 @@ include Gosu
 #
 # Image.autoload_dirs << File.join(self.root, "data", "my_image_dir")  
 # 
-class Game < Chingu::GameState
-  def initialize #(options = {})
-    super
-#    super #(640,480,false)              # leave it blank and it will be 800,600,non fullscreen
-    $window.caption = "Chingu Example 1  -  Controls: ARROWS"
+class Game < Chingu::GameState  #Chingu::Window
+  def initialize
+    super  #(640,480,false)           # leave it blank and it will be 800,600,non fullscreen
     self.input = { :escape => :exit } # exits example on Escape
     
     @player = Player.create(:x => 200, :y => 200, :image => Image["spaceship.png"])

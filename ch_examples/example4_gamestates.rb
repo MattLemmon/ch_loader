@@ -29,6 +29,7 @@ include Gosu
 #
 # Our standard Chingu::Window that makes all the magic happen.
 #
+=begin
 class Game < Chingu::Window
   def initialize
     super
@@ -39,6 +40,7 @@ class Game < Chingu::Window
     self.input = { :left_mouse_button => lambda{Chingu::Text.create(:text => "Woof!")}, :esc => :exit}
   end
 end
+=end
 
 # Our Player 
 class Player < Chingu::GameObject
@@ -187,4 +189,4 @@ class Pause < Chingu::GameState
   end  
 end
 
-Game.new.show
+#Game.new.show

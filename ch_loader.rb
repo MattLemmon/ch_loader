@@ -9,7 +9,12 @@ require 'EX'
 require 'example1_basics.rb'
 require 'example2_gamestate_basics'
 require 'example3_parallax'
+require 'example4_gamestates'
 #puts File.join(File.expand_path(__FILE__), "..", "ch_examples")
+
+#
+# Image.autoload_dirs << File.join(self.root, "data", "my_image_dir")
+#
 
 #class Example1 < Ex
 #	def initialize#(num, descr, cntrls)
@@ -26,9 +31,9 @@ require 'example3_parallax'
 #  Ex3.new
 #end
 
-class Example4 < Test
+#class Example4 < Test
 #  switch_game_state(Test.new)
-end
+#end
 
 class Example5 < Test
 end
@@ -36,7 +41,10 @@ end
 class Example6 < Test
 end
 
-class Example7 < Ex
+class Example7 < Test
+end
+
+class Example8 < Test
 end
 
 Core.new.show
