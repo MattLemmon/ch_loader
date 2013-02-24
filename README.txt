@@ -23,7 +23,7 @@ $ ch_loader.rb
 
 
 This is still pretty rough, but it's coming together.
-So far it loads Examples 1-3, and Example 4 is stubbed in. 
+So far it loads Examples 1-3, and Examples 4-7 are stubbed in. 
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,6 +36,9 @@ PROJECT GOALS:
                         COMPLETED!  I figured it out!! Yes!!
 
 2.  Add more examples.
+                        PENDING...
+
+3. Improve user interface.
                         PENDING...
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
