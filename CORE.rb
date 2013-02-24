@@ -21,7 +21,8 @@ class Core < Chingu::Window
   end
 
   def fart
-    puts "&xo|kee<92ujjsllo8!!!"
+    @fart = "&xo|kee<92ujjsllo8!!!"
+    puts @fart
   end
 end
 
@@ -32,7 +33,7 @@ class Pause < Chingu::GameState
   def initialize(options = {})
     super
     @title = Chingu::Text.create(:text=>"PAUSED (press 'p' to un-pause)", :x=>200, :y=>200, :size=>20, :color => Color.new(0xFF00FF00))
-    self.input = { :p => :un_pause, :q => Menu, :r => :reset }
+    self.input = { :p => :un_pause, :q => Main, :r => :reset }
   end
   def un_pause
     pop_game_state(:setup => false)    # Return the previous game state, dont call setup()

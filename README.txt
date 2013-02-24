@@ -13,7 +13,6 @@
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 $ ch_loader.rb
 
   loads the Chingu Examples from a Main Menu.
@@ -22,14 +21,27 @@ $ ch_loader.rb
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-This is still pretty rough, but it's coming together.
+GLOBAL CONTROLS:
+
+
+Esc   Exit            => :exit
+
+Q     Main Menu       => Main
+
+W     Previous Menu   => pop_game_state
+
+Z     Status Update   => puts $window.current_game_state
+
+F     Fart Feature    => :fart
+
 
 So far it loads Examples 1-5, and Examples 6-8 are stubbed in. 
 
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 PROJECT GOALS:
+
 
 1.  Move all the example files into the /ch_examples folder.
     I think the $LOAD_PATH needs to be specified in order to
@@ -51,8 +63,12 @@ PROJECT GOALS:
 5.  Add Welcome GameState.
                         NOTHING YET.
 
+6.  Upgrade Fart Feature.
+                        NOTHING YET.
+
 
 BUGS TO FIX:
+
 
 1.  Problem with $window.caption-loading. 
     (Doesn't load the captions in the example gamestates).
@@ -60,6 +76,11 @@ BUGS TO FIX:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-       Special thanks to ippa for providing Chingu.
+
+    Thanks to spooner for suggesting that I try Chingu.
+
+
+    Special thanks to ippa for providing Chingu.
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
