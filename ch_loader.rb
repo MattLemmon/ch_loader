@@ -1,4 +1,7 @@
 $LOAD_PATH.unshift File.join(File.expand_path(__FILE__), "..", "ch_examples")
+$LOAD_PATH.unshift File.join(File.expand_path(__FILE__), "..")
+# for some reason, on Ruby 1.9.3, I needed to add the second $LOAD_PATH bit
+# puts $LOAD_PATH
 
 require 'chingu'
 require 'gosu'
@@ -10,7 +13,6 @@ require 'example1_basics.rb'
 require 'example2_gamestate_basics'
 require 'example3_parallax'
 require 'example4_gamestates'
-#puts File.join(File.expand_path(__FILE__), "..", "ch_examples")
 
 #
 # Image.autoload_dirs << File.join(self.root, "data", "my_image_dir")

@@ -8,7 +8,7 @@
 
       --     Requires Chingu Gem and Gosu Gem      --
   
-      --     Tested on RUBY VERSION 1.9.1 only     --
+    --    Tested on Ruby 1.9.1, 1.9.2, and 1.9.3     --
 
       --         Forking is encouraged!!           --
 
