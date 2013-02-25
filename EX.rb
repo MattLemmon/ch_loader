@@ -2,27 +2,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 #     TEST CLASS     TEST CLASS     TEST CLASS     TEST CLASS     TEST CLASS   
 #
@@ -43,38 +22,30 @@ end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 #  EX CLASS  EX CLASS  EX CLASS  EX CLASS  EX CLASS
 #
 class Ex < Chingu::GameState
-	def initialize(num, descr, cntrls, example)
-    @num = num
+	def initialize(n, descr, cntrls, example)
+    @n = n
 	  @descr = descr
 	  @cntrls = cntrls
     @example = example
     super(options)
-#    $window.caption = "Chingu Example #{@num} - #{@descr}          Press F for Fart Effect"
-    @title1 = Chingu::Text.create(:text=>"Example #{@num} - #{@descr}" , :x=>280, :y=>150, :size=>28)
+    $window.caption = "Chingu Example #{@n} - #{@descr}"
+    @title1 = Chingu::Text.create(:text=>"Example #{@n} - #{@descr}" , :x=>110, :y=>130, :size=>52)
 
-    @title2 = Chingu::Text.create(:text=>"- Press ENETER to start -" , :x=>270, :y=>210, :size=>24)
+    @title2 = Chingu::Text.create(:text=>" Controls:" , :x=>120, :y=>230, :size=>42)
 
-    @title3 = Chingu::Text.create(:text=>"Press Q for Menu" , :x=>300, :y=>500, :size=>20)
+    @title3 = Chingu::Text.create(:text=>"#{@cntrls}" , :x=>290, :y=>230, :size=>42)
+
+    @title0 = Chingu::Text.create(:text=>"Enter to Continue" , :x=>110, :y=>350, :size=>46)
+
+
+#    @title4 = Chingu::Text.create(:text=>"W  -  Prev Menu" , :x=>8, :y=>32, :size=>20)
+#    @title5 = Chingu::Text.create(:text=>"F  -  Fart Feature" , :x=>10, :y=>54, :size=>20)
+#    @title6 = Chingu::Text.create(:text=>"Z  -  Status Log" , :x=>10, :y=>76, :size=>20)
+
 
     self.input = { :enter  => :go, 
                    :return => :go    }
@@ -89,6 +60,10 @@ class Ex < Chingu::GameState
 #    @title1.text = "EX   EX   EX   EX   EX   EX"
     puts @example
     push_game_state(@example)
+  end
+
+  def setup
+    $window.caption = "Chingu Example #{@n} - #{@descr}"
   end
 
 end

@@ -37,7 +37,7 @@ Z     Status Update   => puts $window.current_game_state
 F     Fart Feature    => :fart
 
 
-So far it loads Examples 1-5, and Examples 6-8 are stubbed in. 
+So far it loads Examples 1-4, and Examples 5-8 are stubbed in. 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -72,10 +72,11 @@ PROJECT GOALS:
 BUGS TO FIX:
 
 
-1.  Problem with title loading (@descr).
+1.  Problem with title loading (@descr).    FIXED!!!
 
-2.  Problem with $window.caption-loading. 
+2.  Problem with $window.caption-loading.
     (Shows wrong caption in example gamestates).
+                                            NOTHING YET.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

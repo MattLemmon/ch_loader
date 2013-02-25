@@ -56,7 +56,6 @@ end
 class Welcome < Chingu::GameState
   def initialize
     super
-    $window.caption = "Chingu Example Loader - WELCOME"
     self.input = { :b => :boom, :enter => Main, :return => Main }
     @t1 = Chingu::Text.create(:text=>"Chingu Example Loader" , :x=>98, :y=>70, :size=>70)
     @t2 = Chingu::Text.create(:text=>"Global Controls:       Q  -  Main Menu" , :x=>134, :y=>185, :size=>36)
@@ -71,10 +70,6 @@ class Welcome < Chingu::GameState
     puts $window.current_game_state
     puts "Boom!"
     push_game_state(Main)
-  end
-
-  def setup
-    $window.caption = "Chingu Example Loader - WELCOME"
   end
 
 end
@@ -92,24 +87,20 @@ class Main < Chingu::GameState
     @title4 = Chingu::Text.create(:text=>"W  -  Prev Menu" , :x=>8, :y=>32, :size=>20)
     @title5 = Chingu::Text.create(:text=>"F  -  Fart Feature" , :x=>10, :y=>54, :size=>20)
     @title6 = Chingu::Text.create(:text=>"Z  -  Status Log" , :x=>10, :y=>76, :size=>20)
-#    @title8 = Chingu::Text.create(:text=>" " , :x=>158, :y=>300, :size=>34)
-    @title9 = Chingu::Text.create(:text=>" " , :x=>80, :y=>230, :size=>56)
-    @title0 = Chingu::Text.create(:text=>" " , :x=>205, :y=>340, :size=>48)
+    @title8 = Chingu::Text.create(:text=>" " , :x=>158, :y=>300, :size=>34)
+    @title9 = Chingu::Text.create(:text=>" " , :x=>160, :y=>230, :size=>56)
+    @title0 = Chingu::Text.create(:text=>" " , :x=>205, :y=>410, :size=>48)
 
     self.input = { :"1"=>:ex1, :"2"=>:ex2, :"3"=>:ex3, :"4"=>:ex4, :"5"=>:ex5, :"6"=>:ex6, :"7"=>:ex7, :"8"=>:ex8 }
     $window.caption = "Chingu Example Loader - MAIN MENU"
   end
-
-  def setup
-    $window.caption = "Chingu Example Loader - MAIN MENU"
-  end 
 
   def ex1
     @n = 1
     @descr = "Basics"
     @cntrls = "Arrows"
     @status = Game
-#    @title8.text = "Controls  -  #{@cntrls} "
+    @title8.text = "Controls  -  #{@cntrls} "
     @title9.text = "Ex. #{@n} - #{@descr}"
     @title0.text = "Press Enter to Continue"
 
@@ -124,14 +115,14 @@ class Main < Chingu::GameState
     @descr = "GameState Basics"
     @cntrls = "Arrows"
     @status = Play
-#    @title8.text = "Controls  -  #{@cntrls} "
+    @title8.text = "Controls  -  #{@cntrls} "
     @title9.text = "Ex. #{@n} - #{@descr}"
     @title0.text = "Press Enter to Continue"
 
     self.input = { :"1"=>:ex1, :"2"=>:ex2, :"3"=>:ex3, :"4"=>:ex4, :"5"=>:ex5, :"6"=>:ex6, :"7"=>:ex7, :"8"=>:ex8,
     	           :enter  => Ex2.new, #(2, @descr, @cntrls, @status),
     	           :return => Ex.new(@n, @descr, @cntrls, @status)  }
-    $window.caption = "Chingu Example #{@n} - #{@descr}"
+    $window.caption = "Chingu Example @n - #{@descr}"
   end
 
   def ex3
@@ -139,15 +130,14 @@ class Main < Chingu::GameState
     @descr = "Parallax"
     @cntrls = "Arrows, Spacebar"
     @status = Wood
-#    @title8.text = "Controls  -  #{@cntrls} "
+    @title8.text = "Controls  -  #{@cntrls} "
     @title9.text = "Ex. #{@n} - #{@descr}"
     @title0.text = "Press Enter to Continue"
 
+    $window.caption = "Chingu Example #{@n} - #{@descr}"
     self.input = { :"1"=>:ex1, :"2"=>:ex2, :"3"=>:ex3, :"4"=>:ex4, :"5"=>:ex5, :"6"=>:ex6, :"7"=>:ex7, :"8"=>:ex8,
     	           :enter  => Ex3.new, 
     	           :return => Ex.new(@n, @descr, @cntrls, @status)   }
-    $window.caption = "Chingu Example #{@n} - #{@descr}"
-    # interference with example3 window caption
   end
 
   def ex4
