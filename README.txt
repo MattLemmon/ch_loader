@@ -1,49 +1,36 @@
-
-
-            -----------------------------------
+            ___________________________________
            |                                   |
            |       Chingu Example Loader       |
            |                                   |
-            -----------------------------------
+           |___________________________________|
 
       --     Requires Chingu Gem and Gosu Gem      --
-  
     --    Tested on Ruby 1.9.1, 1.9.2, and 1.9.3     --
-
       --         Forking is encouraged!!           --
 
+_____________________________________________________________
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $ ch_loader.rb
-
   loads the Chingu Examples from a Main Menu.
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+_____________________________________________________________
 
 
 GLOBAL CONTROLS:
 
-
-Esc   Exit            => :exit
-
-Q     Main Menu       => Main
-
-W     Previous Menu   => pop_game_state
-
-Z     Status Update   => puts $window.current_game_state
-
-F     Fart Feature    => :fart
-
+Esc =  Exit            
+ Q  =  Main Menu       
+ W  =  Previous Menu   
+ F  =  Fart Feature    
+ Z  =  Status Log   
 
 So far it loads Examples 1-4, and Examples 5-8 are stubbed in. 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+_____________________________________________________________
 
 
 PROJECT GOALS:
-
 
 1.  Move all the example files into the /ch_examples folder.
     I think $LOAD_PATH needs to be specified in order to
@@ -63,7 +50,7 @@ PROJECT GOALS:
                         NOTHING YET.
 
 5.  Add Welcome GameState.
-                        NOTHING YET.
+                        COMPLETED!
 
 6.  Upgrade Fart Feature.
                         NOTHING YET.
@@ -71,15 +58,14 @@ PROJECT GOALS:
 
 BUGS TO FIX:
 
-
 1.  Problem with title loading (@descr).    FIXED!!!
 
 2.  Problem with $window.caption-loading.
-    (Shows wrong caption in example gamestates).
+    (Loads captions at wrong times).
                                             NOTHING YET.
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+_____________________________________________________________
 
 
     Thanks to spooner for suggesting that I try Chingu.
@@ -87,5 +73,4 @@ BUGS TO FIX:
 
     Special thanks to ippa for providing Chingu.
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+_____________________________________________________________
