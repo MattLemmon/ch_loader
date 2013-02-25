@@ -12,7 +12,7 @@ _____________________________________________________________
 
 
 $ ch_loader.rb
-  loads the Chingu Examples from a Main Menu.
+  loads the Chingu Examples from a Welcome Screen.
 
 _____________________________________________________________
 
@@ -49,7 +49,7 @@ PROJECT GOALS:
 4.  Add arrow-toggling of example selections.
                         NOTHING YET.
 
-5.  Add Welcome GameState.
+5.  Add Welcome Screen (should load prior to Main Menu).
                         COMPLETED!
 
 6.  Upgrade Fart Feature.
@@ -61,8 +61,7 @@ BUGS TO FIX:
 1.  Problem with title loading (@descr).    FIXED!!!
 
 2.  Problem with $window.caption-loading.
-    (Loads captions at wrong times).
-                                            NOTHING YET.
+    (Loads captions at wrong times).        NOTHING YET.
 
 
 _____________________________________________________________
